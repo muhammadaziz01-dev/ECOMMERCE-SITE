@@ -182,13 +182,14 @@ header {
                             display: none;
                             width: 224px;
                             position: absolute;
-                            bottom: -225px;
+                            bottom: -220px;
                             right: 0;
                             padding: 18px 12px 10px 20px;
                             border-radius: 4px;
                             background: rgb(177,192,189);
                             background: linear-gradient(127deg, rgba(177,192,189,0.9276960784313726) 21%, rgba(134,134,145,0.8940826330532213) 66%);
                             list-style: none;
+                            z-index: 10;
 
                             &--list{
                                 display: flex;
@@ -230,6 +231,12 @@ header {
                                    }
                                 }
                             }
+                        }
+
+                        &:hover{
+                           .header__botton--wrapper--right--icons--icon3--titil{
+                             display: block;
+                           } 
                         }
                     }
                 }

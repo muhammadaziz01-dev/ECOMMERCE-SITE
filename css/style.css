@@ -320,6 +320,30 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+#month .month__wrapper--top--button button, #today .today__wrapper--btn button {
+  display: inline-flex;
+  padding: 16px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #DB4444;
+  color: #FAFAFA;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+  transition: all 0.2s linear;
+}
+#month .month__wrapper--top--button button:hover, #today .today__wrapper--btn button:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transition: all 0.2s linear;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -480,13 +504,14 @@ header #header__botton .header__botton--wrapper--right--icons--icon3--titil {
   display: none;
   width: 224px;
   position: absolute;
-  bottom: -225px;
+  bottom: -220px;
   right: 0;
   padding: 18px 12px 10px 20px;
   border-radius: 4px;
   background: rgb(177, 192, 189);
   background: linear-gradient(127deg, rgba(177, 192, 189, 0.9276960784) 21%, rgba(134, 134, 145, 0.8940826331) 66%);
   list-style: none;
+  z-index: 10;
 }
 header #header__botton .header__botton--wrapper--right--icons--icon3--titil--list {
   display: flex;
@@ -518,6 +543,9 @@ header #header__botton .header__botton--wrapper--right--icons--icon3:hover {
 }
 header #header__botton .header__botton--wrapper--right--icons--icon3:hover a svg path {
   stroke: #FAFAFA;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon3:hover .header__botton--wrapper--right--icons--icon3--titil {
+  display: block;
 }
 
 main {
@@ -590,7 +618,8 @@ main {
   line-height: 24px;
 }
 #intro .intro__wrapper--righ .swiper-slide--wrapper--left h1 {
-  color: var(--Text, #FAFAFA);
+  width: 294px;
+  color: #FAFAFA;
   font-family: Inter;
   text-align: start;
   font-size: 44px;
@@ -840,28 +869,285 @@ main {
   padding: 76px 0px 76px 468px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
-#today .today__wrapper--btn button {
-  display: inline-flex;
-  padding: 16px 48px;
+#categories {
+  width: 100%;
+}
+#categories .categories__wrapper {
+  padding: 80px 0px 70px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+#categories .categories__wrapper--top {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+#categories .categories__wrapper--top p {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #DB4444;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+#categories .categories__wrapper--top p span {
+  width: 20px;
+  height: 40px;
+  background: #DB4444;
+  border-radius: 3px;
+}
+#categories .categories__wrapper--top h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 1.44px;
+  margin: 0;
+}
+#categories .categories__wrapper--top--icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#categories .categories__wrapper--top--icon span {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+#categories .categories__wrapper--top--icon span:hover {
+  background: #E07575;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+#categories .categories__wrapper--top--icon span:hover svg > path {
+  stroke: #FFF;
+}
+#categories .categories__wrapper--botton {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 60px;
+}
+#categories .categories__wrapper--botton--card {
+  display: flex;
+  width: 170px;
+  height: 145px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
   border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#categories .categories__wrapper--botton--card p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+#categories .categories__wrapper--botton--card:hover {
+  cursor: pointer;
+  border: none;
   background: #DB4444;
-  color: #FAFAFA;
+  box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s linear;
+}
+#categories .categories__wrapper--botton--card:hover svg > path {
+  stroke: #FFF !important;
+}
+#categories .categories__wrapper--botton--card:hover p {
+  color: #FFF;
+}
+
+#month {
+  width: 100%;
+}
+#month .month__wrapper {
+  padding: 70px 0px 140px;
+}
+#month .month__wrapper--top {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+#month .month__wrapper--top--titil p {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #DB4444;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+#month .month__wrapper--top--titil p span {
+  width: 20px;
+  height: 40px;
+  background: #DB4444;
+  border-radius: 3px;
+}
+#month .month__wrapper--top--titil h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 1.44px;
+  margin: 0;
+}
+#month .month__wrapper .today__wrapper--cards {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+#month .month__wrapper .today__wrapper--cards--card {
+  width: 270px;
+}
+#month .month__wrapper .today__wrapper--cards--card--btn {
+  width: 270px;
+  height: 41px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 4px 4px;
+  background: #000;
+  color: #FFF;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  border: none;
-  transition: all 0.2s linear;
+  position: absolute;
+  top: 209px;
+  display: none;
 }
-#today .today__wrapper--btn button:hover {
+#month .month__wrapper .today__wrapper--cards--card:hover {
   cursor: pointer;
-  background: transparent;
+}
+#month .month__wrapper .today__wrapper--cards--card:hover .today__wrapper--cards--card--btn {
+  display: block;
+}
+#month .month__wrapper .today__wrapper--cards--card--top {
+  position: relative;
+  width: 270px;
+  height: 250px;
+  border-radius: 4px;
+  background: #F5F5F5;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#month .month__wrapper .today__wrapper--cards--card--top p {
+  display: inline-block;
+  padding: 4px 12px;
+  gap: 10px;
+  border-radius: 4px;
+  color: #FFF;
+  background: #DB4444;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+#month .month__wrapper .today__wrapper--cards--card--top--spen1 {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #FFF;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+#month .month__wrapper .today__wrapper--cards--card--top--spen1:hover {
+  cursor: pointer;
+  background: #DB4444;
+}
+#month .month__wrapper .today__wrapper--cards--card--top--spen1:hover svg path {
+  stroke: #FFF;
+}
+#month .month__wrapper .today__wrapper--cards--card--top--spen2 {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #FFF;
+  position: absolute;
+  top: 54px;
+  right: 12px;
+}
+#month .month__wrapper .today__wrapper--cards--card--top--spen2:hover {
+  cursor: pointer;
+  background: #DB4444;
+}
+#month .month__wrapper .today__wrapper--cards--card--top--spen2:hover svg path {
+  stroke: #FFF;
+}
+#month .month__wrapper .today__wrapper--cards--card--botton {
+  margin-top: 16px;
+}
+#month .month__wrapper .today__wrapper--cards--card--botton h2 {
   color: #000;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  transition: all 0.2s linear;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#month .month__wrapper .today__wrapper--cards--card--botton--h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+}
+#month .month__wrapper .today__wrapper--cards--card--botton--h3--span1 {
+  color: #DB4444;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+#month .month__wrapper .today__wrapper--cards--card--botton--h3--span2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+#month .month__wrapper .today__wrapper--cards--card--botton--p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+#month .month__wrapper .today__wrapper--cards--card--botton--p--span {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  opacity: 0.5;
 }
 
 footer {

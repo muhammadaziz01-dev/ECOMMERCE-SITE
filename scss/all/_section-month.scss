@@ -1,104 +1,56 @@
-#today{
+#month{
     width: 100%;
 
-    .today__wrapper{
+    .month__wrapper{
+         padding: 70px 0px 140px;
 
-        &--top{
-            display: flex;
-            align-items: center;
-            gap: 16px;
-             
-            h1{
-                width: 20px;
-                height: 40px;
-                background: #DB4444;
-                border-radius: 3px;
-            }
-
-            p{
-                color:  #DB4444;
-                font-family: Poppins;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 20px;
-            }
-
-        }
-
-        &--midle{
+         &--top{
             display: flex;
             align-items: end;
-            gap: 87px;
-            margin-bottom: 31px;
-            position: relative;
+            justify-content: space-between;
+            margin-bottom: 60px;
 
-            h1{
-                color: #000;
-                font-family: Inter;
-                font-size: 36px;
-                font-weight: 600;
-                line-height: 48px; 
-                letter-spacing: 1.44px;
-                margin: 0;
-            }
-
-            &--icon{
-                display: block;
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-
-                span{
-                    width: 46px;
-                    height: 46px;
-                    border-radius: 50%;
-                    background: #F5F5F5;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    transition: all 0.3s linear;    
-
-                    &:hover{
-                        background: #E07575;
-                        cursor: pointer;
-                        transition: all 0.3s linear;
-                        
-                        svg > path{
-                            stroke: #FFF;
-                        }
-                    }
-                }
-            }
-
-            &--soat{
-                display: flex;
-                align-items: center;
-                gap: 17px;
+            &--titil{
 
                 p{
-                    color: #000;
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    color: #DB4444;
                     font-family: Poppins;
-                    font-size: 12px;
-                    font-weight: 500;
-                    line-height: 18px
-                }
-
-                h1{
-
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+    
                     span{
-                        color: #E07575;
-                        margin-left: 17px;
+                        width: 20px;
+                        height: 40px;
+                        background: #DB4444;
+                        border-radius: 3px;
                     }
                 }
+    
+                h1{
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 36px;
+                    font-weight: 600;
+                    line-height: 48px; 
+                    letter-spacing: 1.44px;
+                    margin: 0;
+                }
             }
-        }
 
-        
-        &--cards{
+            &--button{
+                
+                button{
+                    @extend %btn;
+                }
+            }
+         }
+
+         .today__wrapper--cards{
             width: 100%;
             position: relative;
             display: flex;
@@ -258,15 +210,6 @@
                }
             }
            
-        }
-
-        &--btn{
-            padding: 76px 0px 76px 468px;
-            border-bottom: 2px solid rgba(0, 0, 0, 0.50);
-
-            button{
-                @extend %btn;
-            }
         }
     }
 }

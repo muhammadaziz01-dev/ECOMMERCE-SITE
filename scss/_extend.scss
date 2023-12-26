@@ -1,8 +1,28 @@
 //  for extends 
 
-%extandName{
-    background: red;
-    color:white;
+%btn{
+    display: inline-flex;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background:  #DB4444;
+    color: #FAFAFA;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    transition: all .2s linear;
+
+    &:hover{
+        cursor: pointer;
+        background: transparent;
+        color: #000;
+        border: 1px solid rgba(0, 0, 0, 0.50);
+        transition: all .2s linear;
+    }
 }
 
 
