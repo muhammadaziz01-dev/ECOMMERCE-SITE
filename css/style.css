@@ -314,7 +314,7 @@ template {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1170px;
   margin: 0 auto;
   width: 100%;
   padding: 0 10px;
@@ -323,29 +323,51 @@ template {
 header {
   width: 100%;
 }
-header .nav {
+header #header__top {
+  width: 100%;
+  padding: 12px 0;
+  background: #000000;
+}
+header #header__top .header__top--titl {
   display: flex;
-  height: 70px;
+  align-items: center;
+  justify-content: end;
+  gap: 231px;
+}
+header #header__top .header__top--titl-p span {
+  color: #FAFAFA;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+header #header__top .header__top--titl-p a {
+  color: #FAFAFA;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+header #header__top .header__top--titl-p a:hover {
+  color: #e3e2e2;
+}
+header #header__top .header__top--titl #select1 {
+  background: #000000;
+  border: none;
+  color: #FAFAFA;
+}
+header #header__botton {
+  width: 100%;
+  padding: 38px 0px 16px;
+  border-bottom: 1px solid #a2a1a1;
+}
+header #header__botton .header__botton--wrapper {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-}
-header .nav__logo {
-  font-style: 24px;
-  cursor: pointer;
-}
-header .nav__list {
-  display: flex;
-  gap: 50px;
-  list-style-type: none;
-}
-header .nav__list--item {
-  text-transform: uppercase;
-}
-header .nav__list--item-link {
-  text-decoration: none;
-}
-header .nav__list--item-link:hover {
-  color: red;
 }
 
 main {
