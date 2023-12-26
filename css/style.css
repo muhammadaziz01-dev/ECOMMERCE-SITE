@@ -5,6 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -313,6 +315,11 @@ template {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -369,9 +376,242 @@ header #header__botton .header__botton--wrapper {
   align-items: center;
   justify-content: space-between;
 }
+header #header__botton .header__botton--wrapper h1 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.72px;
+}
+header #header__botton .header__botton--wrapper--titl {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  list-style: none;
+}
+header #header__botton .header__botton--wrapper--titl--list-link {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s linear;
+}
+header #header__botton .header__botton--wrapper--titl--list-link:hover {
+  border-bottom: 1px solid #7a7a7a;
+  transition: all 0.2s linear;
+}
+header #header__botton .header__botton--wrapper--right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header #header__botton .header__botton--wrapper--right--input {
+  display: flex;
+  padding: 7px 12px 7px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #F5F5F5;
+}
+header #header__botton .header__botton--wrapper--right--input input {
+  border: none;
+  background: transparent;
+}
+header #header__botton .header__botton--wrapper--right--icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon1 {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding-top: 5px;
+  background: transparent;
+  transition: all 0.2s linear;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon1:hover {
+  background: red;
+  transition: all 0.2s linear;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon1:hover a svg path {
+  stroke: #FAFAFA;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon2 {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding-top: 5px;
+  background: transparent;
+  transition: all 0.2s linear;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon2:hover {
+  background: red;
+  transition: all 0.2s linear;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon2:hover a svg path {
+  stroke: #FAFAFA;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon3 {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding-top: 5px;
+  background: transparent;
+  transition: all 0.2s linear;
+  position: relative;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon3--titil {
+  display: none;
+  width: 224px;
+  position: absolute;
+  bottom: -225px;
+  right: 0;
+  padding: 18px 12px 10px 20px;
+  border-radius: 4px;
+  background: rgb(177, 192, 189);
+  background: linear-gradient(127deg, rgba(177, 192, 189, 0.9276960784) 21%, rgba(134, 134, 145, 0.8940826331) 66%);
+  list-style: none;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon3--titil--list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: transparent;
+  margin-bottom: 13px;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon3--titil--list a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FAFAFA;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  border-bottom: 1px solid transparent;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon3--titil--list:hover {
+  background: rgb(141, 141, 141);
+}
+header #header__botton .header__botton--wrapper--right--icons--icon3--titil--list:hover a {
+  color: #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon3:hover {
+  background: red;
+  transition: all 0.2s linear;
+}
+header #header__botton .header__botton--wrapper--right--icons--icon3:hover a svg path {
+  stroke: #FAFAFA;
+}
 
 main {
   width: 100%;
+}
+
+#intro {
+  width: 100%;
+  padding: 0px 0px 140px;
+}
+#intro .intro__wrapper {
+  display: flex;
+  align-items: start;
+  gap: 61px;
+}
+#intro .intro__wrapper--left {
+  padding-top: 40px;
+  padding-right: 16px;
+  border-right: 1px solid #a2a1a1;
+}
+#intro .intro__wrapper--left--titil {
+  list-style: none;
+}
+#intro .intro__wrapper--left--titil--list {
+  width: 217px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+#intro .intro__wrapper--left--titil--list p {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#intro .intro__wrapper--righ {
+  padding-top: 40px;
+}
+#intro .intro__wrapper--righ .swiper {
+  width: 870px;
+  height: 344px;
+}
+#intro .intro__wrapper--righ .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000000;
+  display: flex;
+  align-items: center;
+}
+#intro .intro__wrapper--righ .swiper-slide--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  padding-left: 64px;
+}
+#intro .intro__wrapper--righ .swiper-slide--wrapper--left--top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+#intro .intro__wrapper--righ .swiper-slide--wrapper--left--top p {
+  color: var(--Text, #FAFAFA);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#intro .intro__wrapper--righ .swiper-slide--wrapper--left h1 {
+  color: var(--Text, #FAFAFA);
+  font-family: Inter;
+  text-align: start;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 1.92px;
+}
+#intro .intro__wrapper--righ .swiper-slide--wrapper--left--botton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#intro .intro__wrapper--righ .swiper-slide--wrapper--left--botton p {
+  color: var(--Text, #FAFAFA);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #FAFAFA;
 }
 
 footer {
