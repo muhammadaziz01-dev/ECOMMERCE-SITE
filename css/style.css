@@ -320,7 +320,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-#siginup__intro .siginup--intro--wrapper--right form .googl-btn, #siginup__intro .siginup--intro--wrapper--right form button, #products .products__wrapper--btn button, #acardyon .acardyon__wrapper--titil button, #month .month__wrapper--top--button button, #today .today__wrapper--btn button {
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#login__intro .login--intro--wrapper--right form div button, #siginup__intro .siginup--intro--wrapper--right form .googl-btn, #siginup__intro .siginup--intro--wrapper--right form button, #products .products__wrapper--btn button, #acardyon .acardyon__wrapper--titil button, #month .month__wrapper--top--button button, #today .today__wrapper--btn button {
   display: inline-flex;
   padding: 16px 48px;
   justify-content: center;
@@ -336,7 +340,7 @@ body {
   border: 1px solid #DB4444;
   transition: all 0.2s linear;
 }
-#siginup__intro .siginup--intro--wrapper--right form .googl-btn:hover, #siginup__intro .siginup--intro--wrapper--right form button:hover, #products .products__wrapper--btn button:hover, #acardyon .acardyon__wrapper--titil button:hover, #month .month__wrapper--top--button button:hover, #today .today__wrapper--btn button:hover {
+#login__intro .login--intro--wrapper--right form div button:hover, #siginup__intro .siginup--intro--wrapper--right form .googl-btn:hover, #siginup__intro .siginup--intro--wrapper--right form button:hover, #products .products__wrapper--btn button:hover, #acardyon .acardyon__wrapper--titil button:hover, #month .month__wrapper--top--button button:hover, #today .today__wrapper--btn button:hover {
   cursor: pointer;
   background: transparent;
   color: #000;
@@ -938,6 +942,7 @@ main {
 #categories .categories__wrapper--botton {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 30px;
   padding-top: 60px;
 }
@@ -968,8 +973,8 @@ main {
   box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
   transition: all 0.2s linear;
 }
-#categories .categories__wrapper--botton--card:hover svg > path {
-  stroke: #FFF !important;
+#categories .categories__wrapper--botton--card:hover svg g path {
+  stroke: white !important;
 }
 #categories .categories__wrapper--botton--card:hover p {
   color: #FFF;
@@ -1784,6 +1789,7 @@ footer .footer__top--titil--list h1 {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.72px;
+  margin-top: 0;
 }
 footer .footer__top--titil--list h2 {
   color: var(--Text, #FAFAFA);
@@ -1978,4 +1984,60 @@ footer .footer__top--titil--list--logos span:hover {
   font-weight: 500;
   line-height: 24px;
   opacity: 0.7;
+}
+
+#login__intro {
+  width: 100%;
+  margin-top: 275px;
+  padding-bottom: 140px;
+}
+#login__intro .login--intro--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#login__intro .login--intro--wrapper--left {
+  position: relative;
+  left: -129px;
+}
+#login__intro .login--intro--wrapper--right h1 {
+  width: 371px;
+  color: var(--Text2, #000);
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 1.44px;
+}
+#login__intro .login--intro--wrapper--right p {
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 48px;
+}
+#login__intro .login--intro--wrapper--right form input {
+  display: block;
+  width: 370px;
+  height: 40px;
+  margin-bottom: 40px;
+  padding: 4px;
+  border: none;
+  border-bottom: 1px solid #807f7f;
+}
+#login__intro .login--intro--wrapper--right form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#login__intro .login--intro--wrapper--right form div p {
+  color: #DB4444;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
