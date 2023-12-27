@@ -1,0 +1,103 @@
+#siginup__intro{
+    width: 100%;
+    margin-top: 275px;
+    padding-bottom: 140px;
+
+    .siginup--intro--wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--left{
+            position: relative;
+            left: -129px;
+        }
+
+        &--right{
+
+            h1{
+                width: 371px;
+                color: var(--Text2, #000);
+                font-family: Inter;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 30px; 
+                letter-spacing: 1.44px;
+            }
+
+            p{
+                color: var(--Text2, #000);
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 48px;
+            }
+
+            form{
+                input{
+                    display: block;
+                    width: 370px;
+                    height: 40px;
+                    margin-bottom: 40px;
+                    padding: 4px  ;
+                    border: none;
+                    border-bottom: 1px solid #807f7f;
+                }
+
+                button{
+                    @extend %btn;
+                    display: block;
+                    width: 370px;
+                    margin-bottom: 16px;
+                }
+
+                .googl-btn{
+                    @extend %btn;
+                    display: block;
+                    width: 370px;
+                    margin-bottom: 16px;
+                    background: transparent;
+                    color: rgb(0, 0, 0);
+                    border: 1px solid rgba(0, 0, 0, 0.50);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover{
+                        border: 1px solid #DB4444;
+                        background: #DB4444;
+                        color: #FFF;
+                    }
+                }
+
+                P{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 16px;
+
+                    span{
+                        color: var(--Text2, #000);
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        opacity: 0.7;
+                    }
+
+                    a{
+                        color: var(--Text2, #000);
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px; 
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -320,7 +320,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-#products .products__wrapper--btn button, #acardyon .acardyon__wrapper--titil button, #month .month__wrapper--top--button button, #today .today__wrapper--btn button {
+#siginup__intro .siginup--intro--wrapper--right form .googl-btn, #siginup__intro .siginup--intro--wrapper--right form button, #products .products__wrapper--btn button, #acardyon .acardyon__wrapper--titil button, #month .month__wrapper--top--button button, #today .today__wrapper--btn button {
   display: inline-flex;
   padding: 16px 48px;
   justify-content: center;
@@ -336,7 +336,7 @@ body {
   border: 1px solid #DB4444;
   transition: all 0.2s linear;
 }
-#products .products__wrapper--btn button:hover, #acardyon .acardyon__wrapper--titil button:hover, #month .month__wrapper--top--button button:hover, #today .today__wrapper--btn button:hover {
+#siginup__intro .siginup--intro--wrapper--right form .googl-btn:hover, #siginup__intro .siginup--intro--wrapper--right form button:hover, #products .products__wrapper--btn button:hover, #acardyon .acardyon__wrapper--titil button:hover, #month .month__wrapper--top--button button:hover, #today .today__wrapper--btn button:hover {
   cursor: pointer;
   background: transparent;
   color: #000;
@@ -1868,4 +1868,114 @@ footer .footer__top--titil--list--logos span:hover {
   background: #DB4444;
   cursor: pointer;
   transition: all 0.3s linear;
+}
+
+#footer__botton {
+  width: 100%;
+  border-top: 1px solid #FFF;
+  opacity: 0.6;
+}
+#footer__botton .footer__botton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding-top: 16px;
+  border-top: 1px solid #FFF;
+  opacity: 0.6;
+}
+#footer__botton .footer__botton a {
+  text-decoration: none;
+  color: var(--Primary, #FFF);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#siginup__intro {
+  width: 100%;
+  margin-top: 275px;
+  padding-bottom: 140px;
+}
+#siginup__intro .siginup--intro--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#siginup__intro .siginup--intro--wrapper--left {
+  position: relative;
+  left: -129px;
+}
+#siginup__intro .siginup--intro--wrapper--right h1 {
+  width: 371px;
+  color: var(--Text2, #000);
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 1.44px;
+}
+#siginup__intro .siginup--intro--wrapper--right p {
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 48px;
+}
+#siginup__intro .siginup--intro--wrapper--right form input {
+  display: block;
+  width: 370px;
+  height: 40px;
+  margin-bottom: 40px;
+  padding: 4px;
+  border: none;
+  border-bottom: 1px solid #807f7f;
+}
+#siginup__intro .siginup--intro--wrapper--right form button {
+  display: block;
+  width: 370px;
+  margin-bottom: 16px;
+}
+#siginup__intro .siginup--intro--wrapper--right form .googl-btn {
+  display: block;
+  width: 370px;
+  margin-bottom: 16px;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#siginup__intro .siginup--intro--wrapper--right form .googl-btn:hover {
+  border: 1px solid #DB4444;
+  background: #DB4444;
+  color: #FFF;
+}
+#siginup__intro .siginup--intro--wrapper--right form P {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+#siginup__intro .siginup--intro--wrapper--right form P span {
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.7;
+}
+#siginup__intro .siginup--intro--wrapper--right form P a {
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  opacity: 0.7;
 }/*# sourceMappingURL=style.css.map */
