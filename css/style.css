@@ -320,7 +320,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-#month .month__wrapper--top--button button, #today .today__wrapper--btn button {
+#acardyon .acardyon__wrapper--titil button, #month .month__wrapper--top--button button, #today .today__wrapper--btn button {
   display: inline-flex;
   padding: 16px 48px;
   justify-content: center;
@@ -336,7 +336,7 @@ body {
   border: none;
   transition: all 0.2s linear;
 }
-#month .month__wrapper--top--button button:hover, #today .today__wrapper--btn button:hover {
+#acardyon .acardyon__wrapper--titil button:hover, #month .month__wrapper--top--button button:hover, #today .today__wrapper--btn button:hover {
   cursor: pointer;
   background: transparent;
   color: #000;
@@ -353,6 +353,10 @@ body {
 
 header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 33;
+  backdrop-filter: blur(20px);
 }
 header #header__top {
   width: 100%;
@@ -555,6 +559,7 @@ main {
 #intro {
   width: 100%;
   padding: 0px 0px 140px;
+  margin-top: 158px;
 }
 #intro .intro__wrapper {
   display: flex;
@@ -1142,6 +1147,312 @@ main {
   margin-bottom: 10px;
 }
 #month .month__wrapper .today__wrapper--cards--card--botton--p--span {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  opacity: 0.5;
+}
+
+#acardyon {
+  width: 100%;
+  padding-bottom: 71px;
+}
+#acardyon .acardyon__wrapper {
+  background: #000000;
+  display: flex;
+  align-items: center;
+  gap: 54px;
+  padding: 69px 49px 69px 56px;
+}
+#acardyon .acardyon__wrapper--titil p {
+  color: var(--Button1, #0F6);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+#acardyon .acardyon__wrapper--titil h1 {
+  width: 443px;
+  color: #FAFAFA;
+  font-family: Inter;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 1.92px;
+}
+#acardyon .acardyon__wrapper--titil--spans {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+#acardyon .acardyon__wrapper--titil--spans p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #FFF;
+  transition: all 0.3s linear;
+}
+#acardyon .acardyon__wrapper--titil--spans p span:nth-child(1) {
+  display: block;
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+#acardyon .acardyon__wrapper--titil--spans p span:nth-child(2) {
+  display: block;
+  color: #000;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+#acardyon .acardyon__wrapper--titil--spans p:hover {
+  cursor: pointer;
+  background: #0F6;
+  transition: all 0.3s linear;
+}
+#acardyon .acardyon__wrapper--titil--spans p:hover span {
+  color: #FFF;
+}
+#acardyon .acardyon__wrapper--titil button {
+  background: #0F6;
+}
+#acardyon .acardyon__wrapper--titil button:hover {
+  cursor: pointer;
+  color: #FFF;
+  background: rgb(26, 203, 97);
+}
+#acardyon .acardyon__wrapper--img {
+  position: relative;
+}
+#acardyon .acardyon__wrapper--img--div {
+  width: 504px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 504px;
+  opacity: 0.3;
+  background: #D9D9D9;
+  filter: blur(100px);
+  position: absolute;
+  top: -69px;
+}
+
+#products {
+  width: 100%;
+}
+#products .products__wrapper {
+  width: 100%;
+}
+#products .products__wrapper--top {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+#products .products__wrapper--top p {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #DB4444;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+#products .products__wrapper--top p span {
+  width: 20px;
+  height: 40px;
+  background: #DB4444;
+  border-radius: 3px;
+}
+#products .products__wrapper--top h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 1.44px;
+  margin: 0;
+}
+#products .products__wrapper--top--icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#products .products__wrapper--top--icon span {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+#products .products__wrapper--top--icon span:hover {
+  background: #E07575;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+#products .products__wrapper--top--icon span:hover svg > path {
+  stroke: #FFF;
+}
+#products .products__wrapper--cards {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 30px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+#products .products__wrapper--cards--card {
+  width: 270px;
+  position: relative;
+}
+#products .products__wrapper--cards--card--btn {
+  width: 270px;
+  height: 41px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 4px 4px;
+  background: #000;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  position: absolute;
+  top: 209px;
+  display: none;
+}
+#products .products__wrapper--cards--card:hover {
+  cursor: pointer;
+}
+#products .products__wrapper--cards--card:hover .products__wrapper--cards--card--btn {
+  display: block;
+}
+#products .products__wrapper--cards--card--top {
+  position: relative;
+  width: 270px;
+  height: 250px;
+  border-radius: 4px;
+  background: #F5F5F5;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products .products__wrapper--cards--card--top p {
+  display: inline-block;
+  padding: 4px 12px;
+  gap: 10px;
+  border-radius: 4px;
+  color: #FFF;
+  background: #0F6;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+#products .products__wrapper--cards--card--top--spen1 {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #FFF;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+#products .products__wrapper--cards--card--top--spen1:hover {
+  cursor: pointer;
+  background: #DB4444;
+}
+#products .products__wrapper--cards--card--top--spen1:hover svg path {
+  stroke: #FFF;
+}
+#products .products__wrapper--cards--card--top--spen2 {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #FFF;
+  position: absolute;
+  top: 54px;
+  right: 12px;
+}
+#products .products__wrapper--cards--card--top--spen2:hover {
+  cursor: pointer;
+  background: #DB4444;
+}
+#products .products__wrapper--cards--card--top--spen2:hover svg path {
+  stroke: #FFF;
+}
+#products .products__wrapper--cards--card--botton {
+  margin-top: 16px;
+}
+#products .products__wrapper--cards--card--botton h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#products .products__wrapper--cards--card--botton--h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+  display: none;
+}
+#products .products__wrapper--cards--card--botton--h3--span1 {
+  color: #DB4444;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+#products .products__wrapper--cards--card--botton--h3--span2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+#products .products__wrapper--cards--card--botton--p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+#products .products__wrapper--cards--card--botton--p--span:nth-child(1) {
+  color: #DB4444;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  padding-top: 4px;
+}
+#products .products__wrapper--cards--card--botton--p--span:nth-child(2) {
   color: #000;
   font-family: Poppins;
   font-size: 14px;

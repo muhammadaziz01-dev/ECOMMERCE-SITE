@@ -1,0 +1,247 @@
+#products{
+    width: 100%;
+     
+    .products__wrapper{
+       width: 100%;
+       
+       &--top{
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        p{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: #DB4444;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            margin-bottom: 20px;
+
+            span{
+                width: 20px;
+                height: 40px;
+                background: #DB4444;
+                border-radius: 3px;
+            }
+        }
+
+        h1{
+            color: #000;
+            font-family: Inter;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 48px; 
+            letter-spacing: 1.44px;
+            margin: 0;
+        }
+
+        &--icon{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            span{
+                width: 46px;
+                height: 46px;
+                border-radius: 50%;
+                background: #F5F5F5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s linear;    
+
+                &:hover{
+                    background: #E07575;
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+                    
+                    svg > path{
+                        stroke: #FFF;
+                    }
+                }
+            }
+        }
+ 
+       }
+
+       &--cards{
+           display: grid;
+           grid-template-columns: repeat(6, auto);
+           gap: 30px;
+           overflow: hidden;
+           overflow-x: scroll;
+
+           &--card{    
+            width: 270px;
+            position: relative;
+            
+            &--btn{
+                width: 270px;
+                height: 41px;
+                flex-shrink: 0;
+                border-radius: 0px 0px 4px 4px;
+                background:  #000;
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                position: absolute;
+                top: 209px;
+                display: none;
+            }
+            &:hover{
+                cursor: pointer; 
+
+                .products__wrapper--cards--card--btn{
+                    display: block;
+                }
+            }
+            
+
+           &--top{
+              position: relative;
+              width: 270px;
+              height: 250px;
+              border-radius: 4px;
+              background: #F5F5F5;
+              padding: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              p{
+                display:inline-block;
+                padding: 4px 12px;
+                gap: 10px;
+                border-radius: 4px;
+                color: #FFF;
+                background: #0F6;
+                position: absolute;
+                top: 12px;
+                left: 12px;
+              }
+
+              &--spen1{
+                width: 34px;
+                height: 34px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: #FFF;
+                position: absolute;
+                top: 12px;
+                right: 12px;
+
+                &:hover{
+                    cursor: pointer;
+                    background: #DB4444;
+
+                    svg{
+                        path{
+                            stroke: #FFF;
+                        }
+                    }
+                }
+              }
+              &--spen2{
+                width: 34px;
+                height: 34px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: #FFF;
+                position: absolute;
+                top: 54px;
+                right: 12px;
+
+                &:hover{
+                    cursor: pointer;
+                    background: #DB4444;
+
+                    svg{
+                        path{
+                            stroke: #FFF;
+                        }
+                    }
+                }
+              }
+              
+           } 
+
+           &--botton{
+             margin-top: 16px;
+             h2{
+                color: #000;
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+             }
+
+             &--h3{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin: 8px 0;
+                // vaqtinchalik display none bo'lib turipti boshqa sectiondan ko'chirilganligi sababli
+                display: none;
+
+                &--span1{
+                    color: #DB4444;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px
+                }
+
+                &--span2{
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                    opacity: 0.5;
+                    text-decoration: line-through;
+                }
+             }
+
+             &--p{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 10px;
+                // o'zgartirish 
+                margin-top: 8px;
+
+                &--span:nth-child(1){
+                    color: #DB4444;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 21px;
+                    padding-top: 4px;
+                }
+
+                &--span:nth-child(2){
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 21px;
+                    opacity: 0.5;
+                }
+             }
+           }
+        }
+       }
+    }
+}

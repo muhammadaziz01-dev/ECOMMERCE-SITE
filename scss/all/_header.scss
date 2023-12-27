@@ -1,5 +1,9 @@
 header {
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 33;
+    backdrop-filter: blur(20px);
     
     #header__top{
         width: 100%;
