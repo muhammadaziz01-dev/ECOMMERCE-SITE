@@ -243,5 +243,12 @@
            }
         }
        }
+       &--btn{
+         padding: 76px 0px 156px 468px;
+
+            button{
+             @extend %btn;
+            }
+        }
     }
 }
