@@ -1708,6 +1708,60 @@ main {
   background-repeat: 50%;
 }
 
+#lest {
+  width: 100%;
+  padding: 140px 0;
+}
+#lest .lest__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 88px;
+}
+#lest .lest__wrapper--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#lest .lest__wrapper--card h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+#lest .lest__wrapper--card p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+#lest .lest--a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+  margin-top: 62px;
+  margin-left: 1200px;
+}
+#lest .lest--a:hover {
+  background: #DB4444;
+  transition: all 0.3s linear;
+}
+#lest .lest--a:hover svg path {
+  stroke: white;
+}
+
 footer {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
