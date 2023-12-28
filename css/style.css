@@ -2663,6 +2663,7 @@ footer .footer__top--titil--list--logos span:hover {
   border: none;
   margin-bottom: 32px;
   padding: 8px;
+  color: #333333;
 }
 #checout__intro .checout__intro--wrzpper--form--left p {
   display: flex;
