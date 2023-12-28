@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../../css/style.min.css" />
     <title>ECOMMERCE-SITE</title>
 </head>
+
 <body>
     <!-- -------- Header start  ------- -->
     <header>
@@ -68,7 +70,7 @@
                                     </a>
                                 </div>
                                 <div class="header__botton--wrapper--right--icons--icon2">
-                                    <a href="#">
+                                    <a href="./index.html">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 32 32" fill="none">
                                             <path
@@ -177,35 +179,98 @@
         </section>
     </header>
     <!-- -------- Header end  ------- -->
-    <!-- main starrt -->
+    <!-- main start -->
     <main>
-        <!--  login  section intro start  -->
-        <section id="login__intro">
-            <div class="container login--intro--wrapper">
-                <div class="login--intro--wrapper--left">
-                    <div></div>
-                    <img src="../../assets/imegs/loginup-img1.jpg" alt="img">
-                </div>
-                <div class="login--intro--wrapper--right">
-                    <h1>Log in to Exclusive</h1>
-                    <p>Enter your details below</p>
-                    <form action="https://echo.htmlacademy.ru/">
-                        <input type="email" name="email" placeholder="Email or Phone Number">
-                        <input type="password" name="password" placeholder="Password">
-                        <div>
-                            <button type="submit">Log In</button>
-                            <p>Forget Password?</p>
-                        </div>
-                        
-                    </form>
+        <!-- Section cart intro start -->
+        <section id="cart__intro">
+            <div class="container">
+                <div class="cart__intro--wrapper">
+                    <div class="cart__intro--wrapper--top">
+                        <p>
+                            <a href="../../index.html">Home</a>
+                            <span>/</span>
+                        </p>
+                        <h4>
+                            <a href="./index.html">Cart</a>
+                        </h4>
+                    </div>
                 </div>
             </div>
         </section>
-        <!--  login  section intro end -->
+        <!-- Section cart intro end -->
+        <!-- Section cart main start -->
+        <section id="cart__main">
+            <div class="container">
+                <div class="cart__main--wrapper">
+                    <div class="cart__main--wrapper--card1">
+                        <p>Product</p>
+                        <p>Price</p>
+                        <p>Quantity</p>
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="cart__main--wrapper--card2">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <circle cx="12" cy="12" r="9" fill="#DB4444" />
+                                <path d="M9 15L12 12M15 9L11.9994 12M11.9994 12L9 9M12 12L15 15" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <img src="../../assets/imegs/cart-img1.png" alt="img">
+                            LCD Monitor
+                        </p>
+                        <p>$650</p>
+                        <p>
+                            <input type="number" placeholder="01">
+                        </p>
+                        <p>$650</p>
+                    </div>
+                    <div class="cart__main--wrapper--card3">
+                        <p>
+                            <img src="../../assets/imegs/cart-img2.png" alt="img">
+                            LCD Monitor
+                        </p>
+                        <p>$550</p>
+                        <p>
+                            <input type="number" placeholder="02">
+                        </p>
+                        <p>$1100</p>
+                    </div>
+                    <div class="cart__main--wrapper--btn">
+                        <button>Update Cart</button>
+                        <button>Return To Shop</button>
+                    </div>
+                    <div class="cart__main--wrapper--card4">
+                        <div class="cart__main--wrapper--card4--left">
+                            <input type="text" placeholder="Coupon Code">
+                            <button>Apply Coupon</button>
+                        </div>
+                        <div class="cart__main--wrapper--card4--right">
+                            <h3>Cart Total</h3>
+                            <p>
+                                <span>Subtotal:</span>
+                                <span>$750</span>
+                            </p>
+                            <p>
+                                <span>Subtotal:</span>
+                                <span>Free</span>
+                            </p>
+                            <p>
+                                <span>Total:</span>
+                                <span>$1750</span>
+                            </p>
+                            <a href="#"><button>Procees to checkout</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section cart main end -->
+
     </main>
     <!-- main end -->
-     <!-- footer start -->
-     <footer>
+    <!-- footer start -->
+    <footer>
         <div class="container">
             <div class="footer__top">
                 <ul class="footer__top--titil">
@@ -319,4 +384,5 @@
     </footer>
     <!-- footer end -->
 </body>
+
 </html>
