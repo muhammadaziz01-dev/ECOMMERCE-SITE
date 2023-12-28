@@ -6,6 +6,9 @@
 
         &--form{
             margin-bottom: 140px;
+            display: flex;
+            align-items: center;
+            gap: 137px;
 
             &--left{
 
@@ -66,6 +69,60 @@
 
                     input:checked {
                         background: red;
+                    }
+                }
+            }
+
+            &--right{
+
+                &--itim{
+                    list-style: none;
+
+                    &--list{
+                        margin-bottom: 32px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        p{
+                            display: flex;
+                            align-items: center;
+                            gap: 16px;
+                            color: var(--Text2, #000);
+                            font-family: Poppins;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px; 
+
+                            input{
+                                width: 300px;
+                                display: flex;
+                                padding: 16px 24px;
+                                align-items: center;
+                                border-radius: 4px;
+                                border: 1px solid #000;
+                                background: transparent;
+                            }
+
+                            
+
+                            .radio{
+                                width: 24px;
+                                height: 24px;
+                                border: 1px solid black;
+                            }
+                        }
+
+                        div{
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                        }
+
+                        button{
+                            @extend %btn;
+                        }
+
                     }
                 }
             }

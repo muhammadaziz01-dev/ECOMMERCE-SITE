@@ -324,7 +324,7 @@ body {
   width: 0;
 }
 
-#cart__main .cart__main--wrapper--card4--right button, #cart__main .cart__main--wrapper--card4--left button, #login__intro .login--intro--wrapper--right form div button, #siginup__intro .siginup--intro--wrapper--right form .googl-btn, #siginup__intro .siginup--intro--wrapper--right form button, #products .products__wrapper--btn button, #acardyon .acardyon__wrapper--titil button, #month .month__wrapper--top--button button, #today .today__wrapper--btn button {
+#checout__intro .checout__intro--wrzpper--form--right--itim--list button, #cart__main .cart__main--wrapper--card4--right button, #cart__main .cart__main--wrapper--card4--left button, #login__intro .login--intro--wrapper--right form div button, #siginup__intro .siginup--intro--wrapper--right form .googl-btn, #siginup__intro .siginup--intro--wrapper--right form button, #products .products__wrapper--btn button, #acardyon .acardyon__wrapper--titil button, #month .month__wrapper--top--button button, #today .today__wrapper--btn button {
   display: inline-flex;
   padding: 16px 48px;
   justify-content: center;
@@ -340,7 +340,7 @@ body {
   border: 1px solid #DB4444;
   transition: all 0.2s linear;
 }
-#cart__main .cart__main--wrapper--card4--right button:hover, #cart__main .cart__main--wrapper--card4--left button:hover, #login__intro .login--intro--wrapper--right form div button:hover, #siginup__intro .siginup--intro--wrapper--right form .googl-btn:hover, #siginup__intro .siginup--intro--wrapper--right form button:hover, #products .products__wrapper--btn button:hover, #acardyon .acardyon__wrapper--titil button:hover, #month .month__wrapper--top--button button:hover, #today .today__wrapper--btn button:hover {
+#checout__intro .checout__intro--wrzpper--form--right--itim--list button:hover, #cart__main .cart__main--wrapper--card4--right button:hover, #cart__main .cart__main--wrapper--card4--left button:hover, #login__intro .login--intro--wrapper--right form div button:hover, #siginup__intro .siginup--intro--wrapper--right form .googl-btn:hover, #siginup__intro .siginup--intro--wrapper--right form button:hover, #products .products__wrapper--btn button:hover, #acardyon .acardyon__wrapper--titil button:hover, #month .month__wrapper--top--button button:hover, #today .today__wrapper--btn button:hover {
   cursor: pointer;
   background: transparent;
   color: #000;
@@ -2627,6 +2627,9 @@ footer .footer__top--titil--list--logos span:hover {
 }
 #checout__intro .checout__intro--wrzpper--form {
   margin-bottom: 140px;
+  display: flex;
+  align-items: center;
+  gap: 137px;
 }
 #checout__intro .checout__intro--wrzpper--form--left h2 {
   color: var(--Text2, #000);
@@ -2677,4 +2680,42 @@ footer .footer__top--titil--list--logos span:hover {
 }
 #checout__intro .checout__intro--wrzpper--form--left p input:checked {
   background: red;
+}
+#checout__intro .checout__intro--wrzpper--form--right--itim {
+  list-style: none;
+}
+#checout__intro .checout__intro--wrzpper--form--right--itim--list {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#checout__intro .checout__intro--wrzpper--form--right--itim--list p {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#checout__intro .checout__intro--wrzpper--form--right--itim--list p input {
+  width: 300px;
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #000;
+  background: transparent;
+}
+#checout__intro .checout__intro--wrzpper--form--right--itim--list p .radio {
+  width: 24px;
+  height: 24px;
+  border: 1px solid black;
+}
+#checout__intro .checout__intro--wrzpper--form--right--itim--list div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }/*# sourceMappingURL=style.css.map */
