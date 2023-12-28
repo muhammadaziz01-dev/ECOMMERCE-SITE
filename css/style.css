@@ -324,7 +324,7 @@ body {
   width: 0;
 }
 
-#checout__intro .checout__intro--wrzpper--form--right--itim--list button, #cart__main .cart__main--wrapper--card4--right button, #cart__main .cart__main--wrapper--card4--left button, #login__intro .login--intro--wrapper--right form div button, #siginup__intro .siginup--intro--wrapper--right form .googl-btn, #siginup__intro .siginup--intro--wrapper--right form button, #products .products__wrapper--btn button, #acardyon .acardyon__wrapper--titil button, #month .month__wrapper--top--button button, #today .today__wrapper--btn button {
+#accaunt__main .accaunt__main--wrapper--right--form--btn button, #checout__intro .checout__intro--wrzpper--form--right--itim--list button, #cart__main .cart__main--wrapper--card4--right button, #cart__main .cart__main--wrapper--card4--left button, #login__intro .login--intro--wrapper--right form div button, #siginup__intro .siginup--intro--wrapper--right form .googl-btn, #siginup__intro .siginup--intro--wrapper--right form button, #products .products__wrapper--btn button, #acardyon .acardyon__wrapper--titil button, #month .month__wrapper--top--button button, #today .today__wrapper--btn button {
   display: inline-flex;
   padding: 16px 48px;
   justify-content: center;
@@ -340,7 +340,7 @@ body {
   border: 1px solid #DB4444;
   transition: all 0.2s linear;
 }
-#checout__intro .checout__intro--wrzpper--form--right--itim--list button:hover, #cart__main .cart__main--wrapper--card4--right button:hover, #cart__main .cart__main--wrapper--card4--left button:hover, #login__intro .login--intro--wrapper--right form div button:hover, #siginup__intro .siginup--intro--wrapper--right form .googl-btn:hover, #siginup__intro .siginup--intro--wrapper--right form button:hover, #products .products__wrapper--btn button:hover, #acardyon .acardyon__wrapper--titil button:hover, #month .month__wrapper--top--button button:hover, #today .today__wrapper--btn button:hover {
+#accaunt__main .accaunt__main--wrapper--right--form--btn button:hover, #checout__intro .checout__intro--wrzpper--form--right--itim--list button:hover, #cart__main .cart__main--wrapper--card4--right button:hover, #cart__main .cart__main--wrapper--card4--left button:hover, #login__intro .login--intro--wrapper--right form div button:hover, #siginup__intro .siginup--intro--wrapper--right form .googl-btn:hover, #siginup__intro .siginup--intro--wrapper--right form button:hover, #products .products__wrapper--btn button:hover, #acardyon .acardyon__wrapper--titil button:hover, #month .month__wrapper--top--button button:hover, #today .today__wrapper--btn button:hover {
   cursor: pointer;
   background: transparent;
   color: #000;
@@ -2719,4 +2719,192 @@ footer .footer__top--titil--list--logos span:hover {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+#cart__intro {
+  width: 100%;
+  margin-top: 222px;
+  padding-bottom: 80px;
+}
+#cart__intro .cart__intro--wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#cart__intro .cart__intro--wrapper--top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#cart__intro .cart__intro--wrapper--top p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#cart__intro .cart__intro--wrapper--top p a {
+  text-decoration: none;
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  opacity: 0.5;
+}
+#cart__intro .cart__intro--wrapper--top p a:hover {
+  opacity: 1;
+}
+#cart__intro .cart__intro--wrapper--top p span {
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  opacity: 0.5;
+}
+#cart__intro .cart__intro--wrapper--top h4 {
+  margin: 0;
+}
+#cart__intro .cart__intro--wrapper--top h4 a {
+  text-decoration: none;
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+#cart__intro .cart__intro--wrapper p {
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+#cart__intro .cart__intro--wrapper p .md {
+  color: #DB4444;
+}
+
+#accaunt__main {
+  width: 100%;
+}
+#accaunt__main .accaunt__main--wrapper {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  gap: 100px;
+  padding-bottom: 140px;
+}
+#accaunt__main .accaunt__main--wrapper--left ul {
+  list-style: none;
+}
+#accaunt__main .accaunt__main--wrapper--left ul li {
+  margin-bottom: 16px;
+}
+#accaunt__main .accaunt__main--wrapper--left ul li h2 {
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+#accaunt__main .accaunt__main--wrapper--left ul li p {
+  color: var(--Text2, #000);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.5;
+  margin-left: 35px;
+  transition: all 0.2s linear;
+}
+#accaunt__main .accaunt__main--wrapper--left ul li p:hover {
+  cursor: pointer;
+  color: #DB4444;
+  transition: all 0.2s linear;
+}
+#accaunt__main .accaunt__main--wrapper--left ul li .activ {
+  color: red;
+}
+#accaunt__main .accaunt__main--wrapper--right {
+  width: 870px;
+  height: 630px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  padding: 40px 80px;
+  background: #FFF;
+  box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+}
+#accaunt__main .accaunt__main--wrapper--right--form h2 {
+  color: #DB4444;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+#accaunt__main .accaunt__main--wrapper--right--form--top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#accaunt__main .accaunt__main--wrapper--right--form--top p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+#accaunt__main .accaunt__main--wrapper--right--form--top p:hover {
+  cursor: pointer;
+  color: #2b2b2b;
+}
+#accaunt__main .accaunt__main--wrapper--right--form--top input {
+  width: 300px;
+  height: 50px;
+  padding: 13px 16px;
+  margin-bottom: 24px;
+  border: none;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--Secondary, #F5F5F5);
+}
+#accaunt__main .accaunt__main--wrapper--right--form--botton p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+#accaunt__main .accaunt__main--wrapper--right--form--botton p:hover {
+  cursor: pointer;
+  color: #2b2b2b;
+}
+#accaunt__main .accaunt__main--wrapper--right--form--botton input {
+  width: 710px;
+  height: 50px;
+  padding: 13px 16px;
+  margin-bottom: 24px;
+  border: none;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--Secondary, #F5F5F5);
+}
+#accaunt__main .accaunt__main--wrapper--right--form--btn {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: 400px;
+}
+#accaunt__main .accaunt__main--wrapper--right--form--btn p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,156 @@
+#accaunt__main{
+    width: 100%;
+
+    .accaunt__main--wrapper{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        gap: 100px;
+        padding-bottom: 140px;
+
+        &--left{
+
+            ul{
+                list-style: none;
+
+                li{
+                    margin-bottom: 16px;
+                    h2{
+                        color: var(--Text2, #000);
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        margin-bottom: 16px;
+                    }
+
+                    p{
+                        color: var(--Text2, #000);
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px; 
+                        opacity: 0.5;
+                        margin-left: 35px;
+                        transition: all .2s linear;
+
+                        &:hover{
+                            cursor: pointer;
+                            color: #DB4444;
+                            transition: all .2s linear;
+                        }
+                    }
+
+                    .activ{
+                        color: red;
+                    }
+                }
+            }
+        }
+
+        &--right{
+            width: 870px;
+            height: 630px;
+            flex-shrink: 0;
+            border-radius: 4px;
+            padding: 40px 80px;
+            background: #FFF;
+            box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+
+            &--form{
+
+                h2{
+                    color: #DB4444;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28px;
+                    margin-bottom: 16px;
+                }
+
+                &--top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    p{
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        margin-bottom: 8px;
+
+                        &:hover{
+                            cursor: pointer;
+                            color: #2b2b2b;
+                        }
+                    }
+
+                    input{
+                        width: 300px;
+                        height: 50px;
+                        padding: 13px 16px;
+                        margin-bottom: 24px;
+                        border: none;
+                        flex-shrink: 0;
+                        border-radius: 4px;
+                        background: var(--Secondary, #F5F5F5);
+                    }
+                }
+
+                &--botton{
+
+                    p{
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        margin-bottom: 8px;
+
+                        &:hover{
+                            cursor: pointer;
+                            color: #2b2b2b;
+                        }
+                    }
+
+                    input{
+                        width: 710px;
+                        height: 50px;
+                        padding: 13px 16px;
+                        margin-bottom: 24px;
+                        border: none;
+                        flex-shrink: 0;
+                        border-radius: 4px;
+                        background: var(--Secondary, #F5F5F5);
+                    }
+                }
+
+                &--btn{
+                    display: flex;
+                    align-items: center;
+                    gap: 32px;
+                    margin-left: 400px;
+
+                    p{
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    button{
+                        @extend %btn;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
