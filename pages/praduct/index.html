@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="../../css/style.min.css" />
+    <title>ECOMMERCE-SITE</title>
+</head>
+
+<body>
+    <!-- -------- Header  start  ------- -->
+    <header>
+        <section id="header__top">
+            <div class="container">
+                <div class="header__top--titl">
+                    <p class="header__top--titl-p">
+                        <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</span>
+                        <a href="#">ShopNow</a>
+                    </p>
+                    <select name="select" id="select1" class="header__top--titl--select">
+                        <option value="English">English</option>
+                        <option value="UZ">UZ</option>
+                        <option value="=RU">RU</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section id="header__botton">
+            <nav>
+                <div class="container">
+                    <div class="header__botton--wrapper">
+                        <h1>Exclusive</h1>
+                        <ul class="header__botton--wrapper--titl">
+                            <li class="header__botton--wrapper--titl--list">
+                                <a href="../../index.html" class="header__botton--wrapper--titl--list-link">Home</a>
+                            </li>
+                            <li class="header__botton--wrapper--titl--list">
+                                <a href="#" class="header__botton--wrapper--titl--list-link">Contact</a>
+                            </li>
+                            <li class="header__botton--wrapper--titl--list">
+                                <a href="#" class="header__botton--wrapper--titl--list-link">About</a>
+                            </li>
+                            <li class="header__botton--wrapper--titl--list">
+                                <a href="../../pages/sigin-up-page/"
+                                    class="header__botton--wrapper--titl--list-link">Sign Up</a>
+                            </li>
+                        </ul>
+                        <div class="header__botton--wrapper--right">
+                            <div class="header__botton--wrapper--right--input">
+                                <input type="email" placeholder="What are you looking for?">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M20 20L16.2223 16.2156M18.3158 11.1579C18.3158 13.0563 17.5617 14.8769 16.2193 16.2193C14.8769 17.5617 13.0563 18.3158 11.1579 18.3158C9.2595 18.3158 7.43886 17.5617 6.0965 16.2193C4.75413 14.8769 4 13.0563 4 11.1579C4 9.2595 4.75413 7.43886 6.0965 6.0965C7.43886 4.75413 9.2595 4 11.1579 4C13.0563 4 14.8769 4.75413 16.2193 6.0965C17.5617 7.43886 18.3158 9.2595 18.3158 11.1579V11.1579Z"
+                                        stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="header__botton--wrapper--right--icons">
+                                <div class="header__botton--wrapper--right--icons--icon1">
+                                    <a href="../wishlist-page/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <path
+                                                d="M11 7C8.239 7 6 9.216 6 11.95C6 14.157 6.875 19.395 15.488 24.69C15.6423 24.7839 15.8194 24.8335 16 24.8335C16.1806 24.8335 16.3577 24.7839 16.512 24.69C25.125 19.395 26 14.157 26 11.95C26 9.216 23.761 7 21 7C18.239 7 16 10 16 10C16 10 13.761 7 11 7Z"
+                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="header__botton--wrapper--right--icons--icon2">
+                                    <a href="../cart-page/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <path
+                                                d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z"
+                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z"
+                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M3 5H7L10 22H26" stroke="black" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M10 16.6667H25.59C25.7056 16.6667 25.8177 16.6267 25.9072 16.5535C25.9966 16.4802 26.0579 16.3782 26.0806 16.2648L27.8806 7.26479C27.8951 7.19222 27.8934 7.11733 27.8755 7.04552C27.8575 6.97371 27.8239 6.90678 27.7769 6.84956C27.73 6.79234 27.6709 6.74625 27.604 6.71462C27.5371 6.68299 27.464 6.66661 27.39 6.66666H8"
+                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="header__botton--wrapper--right--icons--icon3">
+                                    <a href="../accaunt/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <path
+                                                d="M24 27V24.3333C24 22.9188 23.5224 21.5623 22.6722 20.5621C21.8221 19.5619 20.669 19 19.4667 19H11.5333C10.331 19 9.17795 19.5619 8.32778 20.5621C7.47762 21.5623 7 22.9188 7 24.3333V27"
+                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M16.5 14C18.9853 14 21 11.9853 21 9.5C21 7.01472 18.9853 5 16.5 5C14.0147 5 12 7.01472 12 9.5C12 11.9853 14.0147 14 16.5 14Z"
+                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <ul class="header__botton--wrapper--right--icons--icon3--titil">
+                                        <li class="header__botton--wrapper--right--icons--icon3--titil--list">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                viewBox="0 0 32 32" fill="none">
+                                                <path
+                                                    d="M24 27V24.3333C24 22.9188 23.5224 21.5623 22.6722 20.5621C21.8221 19.5619 20.669 19 19.4667 19H11.5333C10.331 19 9.17795 19.5619 8.32778 20.5621C7.47762 21.5623 7 22.9188 7 24.3333V27"
+                                                    stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M16.5 14C18.9853 14 21 11.9853 21 9.5C21 7.01472 18.9853 5 16.5 5C14.0147 5 12 7.01472 12 9.5C12 11.9853 14.0147 14 16.5 14Z"
+                                                    stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            <a href="../accaunt/">Manage My Account</a>
+                                        </li>
+                                        <li class="header__botton--wrapper--right--icons--icon3--titil--list">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 20 22" fill="none">
+                                                <path
+                                                    d="M1 5.3V19.5C1 19.7652 1.10536 20.0196 1.29289 20.2071C1.48043 20.3946 1.73478 20.5 2 20.5H18C18.2652 20.5 18.5196 20.3946 18.7071 20.2071C18.8946 20.0196 19 19.7652 19 19.5V5.3H1Z"
+                                                    stroke="#FAFAFA" stroke-width="1.5" stroke-linejoin="round" />
+                                                <path
+                                                    d="M19 5.3L16.1665 1.5H3.8335L1 5.3M13.7775 8.6C13.7775 10.699 12.0865 12.4 10 12.4C7.9135 12.4 6.222 10.699 6.222 8.6"
+                                                    stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            <a href="#">My Order</a>
+                                        </li>
+                                        <li class="header__botton--wrapper--right--icons--icon3--titil--list">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_2410_393)">
+                                                    <path d="M8 16L12 12M16 8L11.9992 12M11.9992 12L8 8M12 12L16 16"
+                                                        stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <circle cx="12" cy="12" r="11.25" stroke="white"
+                                                        stroke-width="1.5" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2410_393">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <a href="#">My Cancellations</a>
+                                        </li>
+                                        <li class="header__botton--wrapper--right--icons--icon3--titil--list">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M19.8284 9.93621C20.4517 9.93621 20.7176 10.7286 20.2205 11.1046L16.8905 13.6234C16.1688 14.1693 15.8661 15.1087 16.1334 15.9732L17.3864 20.0261C17.5735 20.6312 16.8729 21.1193 16.3701 20.7341L13.3075 18.3879C12.536 17.7969 11.464 17.7969 10.6925 18.3879L7.61357 20.7466C7.11152 21.1312 6.41161 20.645 6.59677 20.0403L7.83243 16.0046C8.09532 15.146 7.79694 14.2145 7.08413 13.6684L3.73432 11.1022C3.24111 10.7244 3.50831 9.93621 4.12961 9.93621H8.12744C9.07024 9.93621 9.90305 9.32198 10.1815 8.42125L11.379 4.5479C11.5678 3.93721 12.4322 3.93722 12.621 4.5479L13.8185 8.42124C14.0969 9.32198 14.9298 9.93621 15.8726 9.93621H19.8284Z"
+                                                    stroke="#FAFAFA" stroke-width="1.5" />
+                                            </svg>
+                                            <a href="#">My Reviews</a>
+                                        </li>
+                                        <li class="header__botton--wrapper--right--icons--icon3--titil--list">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M4 12H13.5M6 15L3 12L6 9M11 7V6C11 5.46957 11.2107 4.96086 11.5858 4.58579C11.9609 4.21071 12.4696 4 13 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H13C12.4696 20 11.9609 19.7893 11.5858 19.4142C11.2107 19.0391 11 18.5304 11 18V17"
+                                                    stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            <a href="#">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <!-- -------- Header end  ------- -->
+    <!-- main start -->
+    <main>
+        <!-- Section intro start -->
+        <section id="cart__intro">
+            <div class="container">
+                <div class="cart__intro--wrapper">
+                    <div class="cart__intro--wrapper--top">
+                        <p>
+                            <a href="../accaunt/">Account</a>
+                            <span>/</span>
+                        </p>
+                        <p>
+                            <a href="../accaunt/">Gaming</a>
+                            <span>/</span>
+                        </p>
+                        <h4>
+                            <a href="./index.html">Havic HV G-92 Gamepad</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section  intro end -->
+        <!-- Section praduct main start -->
+        <section id="praduct__main">
+            <div class="container">
+                <div class="praduct__main--wrapper">
+                    <div class="praduct__main--wrapper--left">
+                        <ul class="praduct__main--wrapper--left--itim">
+                            <li class="praduct__main--wrapper--left--itim--list">
+                                <img src="../../assets/imegs/praduct-img1.png" alt="img">
+                            </li>
+                            <li class="praduct__main--wrapper--left--itim--list">
+                                <img src="../../assets/imegs/praduct-img2.png" alt="img">
+                            </li>
+                            <li class="praduct__main--wrapper--left--itim--list">
+                                <img src="../../assets/imegs/praduct-img3.png" alt="img">
+                            </li>
+                            <li class="praduct__main--wrapper--left--itim--list">
+                                <img src="../../assets/imegs/praduct-img4.png" alt="img">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="praduct__main--wrapper--main">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../../assets/imegs/praduct-img6.png" alt="img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../../assets/imegs/praduct-img6.png" alt="img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../../assets/imegs/praduct-img6.png" alt="img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../../assets/imegs/praduct-img6.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="praduct__main--wrapper--right">
+                        <h2>Havic HV G-92 Gamepad</h2>
+                        <p>
+                            <img src="../../assets/imegs/star-4.svg" alt="star">
+                            <span>(150 Reviews) | </span>
+                            <span>In Stock</span>
+                        </p>
+                        <h3>$192.00</h3>
+                        <article>
+                            PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy
+                            bubble free install & mess free removal Pressure sensitive.
+                        </article>
+                        <h4>
+                            <span>Colours:</span>
+                            <img src="../../assets/imegs/praduct-icon1.svg" alt="icon">
+                        </h4>
+                        <h4>
+                            <span>Size:</span>
+                            <div>
+                                <span>xs</span>
+                                <span>s</span>
+                                <span class="activ">m</span>
+                                <span>l</span>
+                                <span>xl</span>
+                            </div>
+                        </h4>
+                        <div class="praduct__main--wrapper--right--card1">
+                            <svg width="159" height="44" viewBox="0 0 159 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 4C0.5 2.067 2.067 0.5 4 0.5H39.5V43.5H4C2.067 43.5 0.5 41.933 0.5 40V4Z"
+                                    stroke="black" stroke-opacity="0.5" />
+                                <path d="M28 22H12" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M39 1H119V-1H39V1ZM119 43H39V45H119V43Z" fill="black" fill-opacity="0.5"
+                                    mask="url(#path-4-inside-1_287_5109)" />
+                                <path
+                                    d="M75.46 25.9C76.74 24.7933 77.7467 23.8867 78.48 23.18C79.2267 22.46 79.8467 21.7133 80.34 20.94C80.8333 20.1667 81.08 19.3933 81.08 18.62C81.08 17.82 80.8867 17.1933 80.5 16.74C80.1267 16.2867 79.5333 16.06 78.72 16.06C77.9333 16.06 77.32 16.3133 76.88 16.82C76.4533 17.3133 76.2267 17.98 76.2 18.82H74C74.04 17.3 74.4933 16.14 75.36 15.34C76.24 14.5267 77.3533 14.12 78.7 14.12C80.1533 14.12 81.2867 14.52 82.1 15.32C82.9267 16.12 83.34 17.1867 83.34 18.52C83.34 19.48 83.0933 20.4067 82.6 21.3C82.12 22.18 81.54 22.9733 80.86 23.68C80.1933 24.3733 79.34 25.18 78.3 26.1L77.4 26.9H83.74V28.8H74.02V27.14L75.46 25.9Z"
+                                    fill="black" />
+                                <path d="M118 0H155C157.209 0 159 1.79086 159 4V40C159 42.2091 157.209 44 155 44H118V0Z"
+                                    fill="#DB4444" />
+                                <path d="M139 30V22M139 22V14M139 22H147M139 22H131" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                            <button>Buy Now</button>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <path
+                                        d="M11 7C8.239 7 6 9.216 6 11.95C6 14.157 6.875 19.395 15.488 24.69C15.6423 24.7839 15.8194 24.8335 16 24.8335C16.1806 24.8335 16.3577 24.7839 16.512 24.69C25.125 19.395 26 14.157 26 11.95C26 9.216 23.761 7 21 7C18.239 7 16 10 16 10C16 10 13.761 7 11 7Z"
+                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="praduct__main--wrapper--right--card2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <g clip-path="url(#clip0_261_4843)">
+                                    <path
+                                        d="M11.6663 31.6667C13.5073 31.6667 14.9997 30.1743 14.9997 28.3333C14.9997 26.4924 13.5073 25 11.6663 25C9.82539 25 8.33301 26.4924 8.33301 28.3333C8.33301 30.1743 9.82539 31.6667 11.6663 31.6667Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M28.3333 31.6667C30.1743 31.6667 31.6667 30.1743 31.6667 28.3333C31.6667 26.4924 30.1743 25 28.3333 25C26.4924 25 25 26.4924 25 28.3333C25 30.1743 26.4924 31.6667 28.3333 31.6667Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.33301 28.3335H6.99967C5.8951 28.3335 4.99967 27.4381 4.99967 26.3335V21.6668M3.33301 8.3335H19.6663C20.7709 8.3335 21.6663 9.22893 21.6663 10.3335V28.3335M14.9997 28.3335H24.9997M31.6663 28.3335H32.9997C34.1042 28.3335 34.9997 27.4381 34.9997 26.3335V18.3335M34.9997 18.3335H21.6663M34.9997 18.3335L30.5823 10.9712C30.2208 10.3688 29.5698 10.0002 28.8673 10.0002H21.6663"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8 28H6.66667C5.5621 28 4.66667 27.1046 4.66667 26V21.3333M3 8H19.3333C20.4379 8 21.3333 8.89543 21.3333 10V28M15 28H24.6667M32 28H32.6667C33.7712 28 34.6667 27.1046 34.6667 26V18M34.6667 18H21.3333M34.6667 18L30.2493 10.6377C29.8878 10.0353 29.2368 9.66667 28.5343 9.66667H21.3333"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M5 11.8182H11.6667" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M1.81836 15.4545H8.48503" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5 19.0909H11.6667" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_261_4843">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <div>
+                                <h3>Free Delivery</h3>
+                                <p>Enter your postal code for Delivery Availability</p>
+                            </div>
+                        </div>
+                        <div class="praduct__main--wrapper--right--card3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <g clip-path="url(#clip0_261_4865)">
+                                    <path
+                                        d="M33.3337 18.3334C32.9261 15.4004 31.5654 12.6828 29.4614 10.5992C27.3573 8.51557 24.6266 7.18155 21.6898 6.80261C18.753 6.42366 15.773 7.02082 13.209 8.5021C10.645 9.98337 8.63907 12.2666 7.50033 15M6.66699 8.33335V15H13.3337"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M6.66699 21.6667C7.07459 24.5997 8.43521 27.3173 10.5393 29.4009C12.6433 31.4845 15.3741 32.8185 18.3109 33.1974C21.2477 33.5764 24.2276 32.9792 26.7917 31.4979C29.3557 30.0167 31.3616 27.7335 32.5003 25M33.3337 31.6667V25H26.667"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_261_4865">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <div>
+                                <h3>Return Delivery</h3>
+                                <p>Free 30 Days Delivery Returns. Details</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section praduct main start -->
+        <!-- Sectoion This Month start -->
+        <section id="month">
+            <div class="container">
+                <div class="month__wrapper">
+                    <div class="month__wrapper--top">
+                        <div class="month__wrapper--top--titil">
+                            <p>
+                                <span></span>
+                                This Month
+                            </p>
+                            <!-- <h1>
+                                Best Selling Products
+                            </h1> -->
+                        </div>
+                        <!-- <div class="month__wrapper--top--button">
+                            <a href="#"><button>View All</button></a>
+                        </div> -->
+                    </div>
+                    <div class="today__wrapper--cards">
+                        <div class="today__wrapper--cards--card">
+                            <div class="today__wrapper--cards--card--top">
+                                <p>-40%</p> 
+                                <img src="../../assets/imegs/today-img1.png" alt="img">
+                                <span class="today__wrapper--cards--card--top--spen1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M8 5C5.7912 5 4 6.73964 4 8.88594C4 10.6185 4.7 14.7305 11.5904 18.8873C11.7138 18.961 11.8555 19 12 19C12.1445 19 12.2862 18.961 12.4096 18.8873C19.3 14.7305 20 10.6185 20 8.88594C20 6.73964 18.2088 5 16 5C13.7912 5 12 7.35511 12 7.35511C12 7.35511 10.2088 5 8 5Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="today__wrapper--cards--card--top--spen2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16"
+                                        fill="none">
+                                        <path
+                                            d="M20.257 6.962C20.731 7.582 20.731 8.419 20.257 9.038C18.764 10.987 15.182 15 11 15C6.81801 15 3.23601 10.987 1.74301 9.038C1.51239 8.74113 1.38721 8.37592 1.38721 8C1.38721 7.62408 1.51239 7.25887 1.74301 6.962C3.23601 5.013 6.81801 1 11 1C15.182 1 18.764 5.013 20.257 6.962V6.962Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <a href="#"><button class="today__wrapper--cards--card--btn">Add To Cart</button></a>
+                            <div class="today__wrapper--cards--card--botton">
+                                <h2>AK-900 Wired Keyboard</h2>
+                                <h3 class="today__wrapper--cards--card--botton--h3">
+                                    <span class="today__wrapper--cards--card--botton--h3--span1">$120</span>
+                                    <span class="today__wrapper--cards--card--botton--h3--span2">$160</span>
+                                </h3>
+                                <p class="today__wrapper--cards--card--botton--p">
+                                    <img src="../../assets/imegs/Five-star.svg" alt="star">
+                                    <span class="today__wrapper--cards--card--botton--p--span">(88)</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="today__wrapper--cards--card">
+                            <div class="today__wrapper--cards--card--top">
+                                 <p>-35%</p>
+                                <img src="../../assets/imegs/today-img2.png" alt="img">
+                                <span class="today__wrapper--cards--card--top--spen1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M8 5C5.7912 5 4 6.73964 4 8.88594C4 10.6185 4.7 14.7305 11.5904 18.8873C11.7138 18.961 11.8555 19 12 19C12.1445 19 12.2862 18.961 12.4096 18.8873C19.3 14.7305 20 10.6185 20 8.88594C20 6.73964 18.2088 5 16 5C13.7912 5 12 7.35511 12 7.35511C12 7.35511 10.2088 5 8 5Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="today__wrapper--cards--card--top--spen2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16"
+                                        fill="none">
+                                        <path
+                                            d="M20.257 6.962C20.731 7.582 20.731 8.419 20.257 9.038C18.764 10.987 15.182 15 11 15C6.81801 15 3.23601 10.987 1.74301 9.038C1.51239 8.74113 1.38721 8.37592 1.38721 8C1.38721 7.62408 1.51239 7.25887 1.74301 6.962C3.23601 5.013 6.81801 1 11 1C15.182 1 18.764 5.013 20.257 6.962V6.962Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <a href="#"><button class="today__wrapper--cards--card--btn">Add To Cart</button></a>
+                            <div class="today__wrapper--cards--card--botton">
+                                <h2>AK-900 Wired Keyboard</h2>
+                                <h3 class="today__wrapper--cards--card--botton--h3">
+                                    <span class="today__wrapper--cards--card--botton--h3--span1">$960</span>
+                                    <span class="today__wrapper--cards--card--botton--h3--span2">$1160</span>
+                                </h3>
+                                <p class="today__wrapper--cards--card--botton--p">
+                                    <img src="../../assets/imegs/star-4.svg" alt="star">
+                                    <span class="today__wrapper--cards--card--botton--p--span">(75)</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="today__wrapper--cards--card">
+                            <div class="today__wrapper--cards--card--top">
+                                <p>-30%</p> 
+                                <img src="../../assets/imegs/today-img3.png" alt="img">
+                                <span class="today__wrapper--cards--card--top--spen1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M8 5C5.7912 5 4 6.73964 4 8.88594C4 10.6185 4.7 14.7305 11.5904 18.8873C11.7138 18.961 11.8555 19 12 19C12.1445 19 12.2862 18.961 12.4096 18.8873C19.3 14.7305 20 10.6185 20 8.88594C20 6.73964 18.2088 5 16 5C13.7912 5 12 7.35511 12 7.35511C12 7.35511 10.2088 5 8 5Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="today__wrapper--cards--card--top--spen2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16"
+                                        fill="none">
+                                        <path
+                                            d="M20.257 6.962C20.731 7.582 20.731 8.419 20.257 9.038C18.764 10.987 15.182 15 11 15C6.81801 15 3.23601 10.987 1.74301 9.038C1.51239 8.74113 1.38721 8.37592 1.38721 8C1.38721 7.62408 1.51239 7.25887 1.74301 6.962C3.23601 5.013 6.81801 1 11 1C15.182 1 18.764 5.013 20.257 6.962V6.962Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <a href="#"><button class="today__wrapper--cards--card--btn">Add To Cart</button></a>
+                            <div class="today__wrapper--cards--card--botton">
+                                <h2>IPS LCD Gaming Monitor</h2>
+                                <h3 class="today__wrapper--cards--card--botton--h3">
+                                    <span class="today__wrapper--cards--card--botton--h3--span1">$370</span>
+                                    <span class="today__wrapper--cards--card--botton--h3--span2">$400</span>
+                                </h3>
+                                <p class="today__wrapper--cards--card--botton--p">
+                                    <img src="../../assets/imegs/Five-star.svg" alt="star">
+                                    <span class="today__wrapper--cards--card--botton--p--span">(99)</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="today__wrapper--cards--card">
+                            <div class="today__wrapper--cards--card--top">
+                                <!-- <p>-25%</p> -->
+                                <img src="../../assets/imegs/section-month-img3.png" alt="img">
+                                <span class="today__wrapper--cards--card--top--spen1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M8 5C5.7912 5 4 6.73964 4 8.88594C4 10.6185 4.7 14.7305 11.5904 18.8873C11.7138 18.961 11.8555 19 12 19C12.1445 19 12.2862 18.961 12.4096 18.8873C19.3 14.7305 20 10.6185 20 8.88594C20 6.73964 18.2088 5 16 5C13.7912 5 12 7.35511 12 7.35511C12 7.35511 10.2088 5 8 5Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="today__wrapper--cards--card--top--spen2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16"
+                                        fill="none">
+                                        <path
+                                            d="M20.257 6.962C20.731 7.582 20.731 8.419 20.257 9.038C18.764 10.987 15.182 15 11 15C6.81801 15 3.23601 10.987 1.74301 9.038C1.51239 8.74113 1.38721 8.37592 1.38721 8C1.38721 7.62408 1.51239 7.25887 1.74301 6.962C3.23601 5.013 6.81801 1 11 1C15.182 1 18.764 5.013 20.257 6.962V6.962Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <a href="#"><button class="today__wrapper--cards--card--btn">Add To Cart</button></a>
+                            <div class="today__wrapper--cards--card--botton">
+                                <h2>S-Series Comfort Chair </h2>
+                                <h3 class="today__wrapper--cards--card--botton--h3">
+                                    <span class="today__wrapper--cards--card--botton--h3--span1">$120</span>
+                                    <span class="today__wrapper--cards--card--botton--h3--span2">$160</span>
+                                </h3>
+                                <p class="today__wrapper--cards--card--botton--p">
+                                    <img src="../../assets/imegs/star-3.png" alt="star">
+                                    <span class="today__wrapper--cards--card--botton--p--span">(88)</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="today__wrapper--cards--card">
+                            <div class="today__wrapper--cards--card--top">
+                                <!-- <p>-25%</p> -->
+                                <img src="../../assets/imegs/section-month-img1.png" alt="img">
+                                <span class="today__wrapper--cards--card--top--spen1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M8 5C5.7912 5 4 6.73964 4 8.88594C4 10.6185 4.7 14.7305 11.5904 18.8873C11.7138 18.961 11.8555 19 12 19C12.1445 19 12.2862 18.961 12.4096 18.8873C19.3 14.7305 20 10.6185 20 8.88594C20 6.73964 18.2088 5 16 5C13.7912 5 12 7.35511 12 7.35511C12 7.35511 10.2088 5 8 5Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="today__wrapper--cards--card--top--spen2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16"
+                                        fill="none">
+                                        <path
+                                            d="M20.257 6.962C20.731 7.582 20.731 8.419 20.257 9.038C18.764 10.987 15.182 15 11 15C6.81801 15 3.23601 10.987 1.74301 9.038C1.51239 8.74113 1.38721 8.37592 1.38721 8C1.38721 7.62408 1.51239 7.25887 1.74301 6.962C3.23601 5.013 6.81801 1 11 1C15.182 1 18.764 5.013 20.257 6.962V6.962Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <a href="#"><button class="today__wrapper--cards--card--btn">Add To Cart</button></a>
+                            <div class="today__wrapper--cards--card--botton">
+                                <h2>S-Series Comfort Chair </h2>
+                                <h3 class="today__wrapper--cards--card--botton--h3">
+                                    <span class="today__wrapper--cards--card--botton--h3--span1">$120</span>
+                                    <span class="today__wrapper--cards--card--botton--h3--span2">$160</span>
+                                </h3>
+                                <p class="today__wrapper--cards--card--botton--p">
+                                    <img src="../../assets/imegs/star-4.svg" alt="star">
+                                    <span class="today__wrapper--cards--card--botton--p--span">(88)</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="today__wrapper--cards--card">
+                            <div class="today__wrapper--cards--card--top">
+                                <!-- <p>-40%</p> -->
+                                <img src="../../assets/imegs/section-month-img2.png" alt="img">
+                                <span class="today__wrapper--cards--card--top--spen1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M8 5C5.7912 5 4 6.73964 4 8.88594C4 10.6185 4.7 14.7305 11.5904 18.8873C11.7138 18.961 11.8555 19 12 19C12.1445 19 12.2862 18.961 12.4096 18.8873C19.3 14.7305 20 10.6185 20 8.88594C20 6.73964 18.2088 5 16 5C13.7912 5 12 7.35511 12 7.35511C12 7.35511 10.2088 5 8 5Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="today__wrapper--cards--card--top--spen2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16"
+                                        fill="none">
+                                        <path
+                                            d="M20.257 6.962C20.731 7.582 20.731 8.419 20.257 9.038C18.764 10.987 15.182 15 11 15C6.81801 15 3.23601 10.987 1.74301 9.038C1.51239 8.74113 1.38721 8.37592 1.38721 8C1.38721 7.62408 1.51239 7.25887 1.74301 6.962C3.23601 5.013 6.81801 1 11 1C15.182 1 18.764 5.013 20.257 6.962V6.962Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <a href="#"><button class="today__wrapper--cards--card--btn">Add To Cart</button></a>
+                            <div class="today__wrapper--cards--card--botton">
+                                <h2>AK-900 Wired Keyboard</h2>
+                                <h3 class="today__wrapper--cards--card--botton--h3">
+                                    <span class="today__wrapper--cards--card--botton--h3--span1">$120</span>
+                                    <span class="today__wrapper--cards--card--botton--h3--span2">$160</span>
+                                </h3>
+                                <p class="today__wrapper--cards--card--botton--p">
+                                    <img src="../../assets/imegs/Five-star.svg" alt="star">
+                                    <span class="today__wrapper--cards--card--botton--p--span">(88)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Sectoion This Month end -->
+    </main>
+    <!--main rend  -->
+    <!-- footer start -->
+    <footer>
+        <div class="container">
+            <div class="footer__top">
+                <ul class="footer__top--titil">
+                    <li class="footer__top--titil--list">
+                        <h1>Exclusive</h1>
+                        <h2>Subscribe</h2>
+                        <p> Get 10% off your first order</p>
+                        <div class="footer__top--titil--list--input">
+                            <input type="email" placeholder="Enter your email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M9.91199 11.9998H3.99999L2.02299 4.1348C2.01033 4.0891 2.00262 4.04216 1.99999 3.9948C1.97799 3.2738 2.77199 2.7738 3.45999 3.1038L22 11.9998L3.45999 20.8958C2.77999 21.2228 1.99599 20.7368 1.99999 20.0288C2.00201 19.9655 2.01313 19.9029 2.03299 19.8428L3.49999 14.9998"
+                                    stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="footer__top--titil--list">
+                        <h2>Support</h2>
+                        <p>111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</p>
+                        <p>exclusive@gmail.com</p>
+                        <p>+88015-88888-9999</p>
+                    </li>
+                    <li class="footer__top--titil--list">
+                        <h2>Account</h2>
+                        <p>My Account</p>
+                        <p>Login / Register</p>
+                        <p>Cart</p>
+                        <p>Wishlist</p>
+                        <p>Shop</p>
+                    </li>
+                    <li class="footer__top--titil--list">
+                        <h2>Contact</h2>
+                        <p>FAQ</p>
+                        <p>Terms Of Use</p>
+                        <p>Privacy Policy</p>
+                        <p>Quick Link</p>
+                    </li>
+                    <li class="footer__top--titil--list">
+                        <h2>Download App</h2>
+                        <h3>Save $3 with App New User Only</h3>
+                        <div class="footer__top--titil--list--wrapper">
+                            <div class="footer__top--titil--list--wrapper--left">
+                                <img src="../../assets/imegs/footer-img1.png" alt="QR">
+                            </div>
+                            <div class="footer__top--titil--list--wrapper--right">
+                                <img src="../../assets/imegs/footer-img2.png" alt="img">
+                                <img src="../../assets/imegs/footer-img3.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="footer__top--titil--list--logos">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M13 10H17.5L17 12H13V21H11V12H7V10H11V8.128C11 6.345 11.186 5.698 11.534 5.046C11.875 4.40181 12.4018 3.87501 13.046 3.534C13.698 3.186 14.345 3 16.128 3C16.65 3 17.108 3.05 17.5 3.15V5H16.128C14.804 5 14.401 5.078 13.99 5.298C13.686 5.46 13.46 5.686 13.298 5.99C13.078 6.401 13 6.804 13 8.128V10Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Group">
+                                        <path id="Vector"
+                                            d="M12.905 8.84651L12.905 8.84646C12.9194 8.06035 13.2418 7.3113 13.8028 6.76049C14.3639 6.20969 15.1188 5.90116 15.905 5.90129L12.905 8.84651ZM12.905 8.84651L12.877 10.4213M12.905 8.84651L12.877 10.4213M4.75811 7.80857L4.89001 7.91846C6.76679 9.48211 8.71781 10.4182 10.7495 10.6952C10.7495 10.6952 10.7495 10.6952 10.7495 10.6952L12.3104 10.9072L4.75811 7.80857ZM4.75811 7.80857L4.72759 7.97751M4.75811 7.80857L4.72759 7.97751M4.72759 7.97751C4.42576 9.64819 4.5683 11.0709 5.1479 12.3018C5.72718 13.532 6.73827 14.5605 8.15577 15.4519L8.15579 15.452M4.72759 7.97751L8.15579 15.452M8.15579 15.452L9.90279 16.55L9.954 16.4685M8.15579 15.452L9.954 16.4685M9.954 16.4685L9.90279 16.55C9.97196 16.5934 10.0294 16.6532 10.0702 16.724C10.1109 16.7948 10.1337 16.8745 10.1365 16.9562C10.1392 17.0378 10.122 17.1189 10.0862 17.1924C10.0504 17.2658 9.99716 17.3294 9.93112 17.3775L9.93101 17.3775M9.954 16.4685L9.93101 17.3775M9.93101 17.3775L8.33901 18.5405L8.11542 18.7039M9.93101 17.3775L8.11542 18.7039M8.11542 18.7039L8.39178 18.7211M8.11542 18.7039L8.39178 18.7211M8.39178 18.7211C9.3449 18.7805 10.2529 18.7385 11.0095 18.5884L11.0096 18.5884M8.39178 18.7211L11.0096 18.5884M11.0096 18.5884C13.3886 18.1134 15.3745 16.9794 16.7652 15.2211M11.0096 18.5884L16.7652 15.2211M12.877 10.4213C12.8757 10.4918 12.8594 10.5612 12.8293 10.625C12.7993 10.6887 12.7561 10.7454 12.7026 10.7912C12.649 10.8371 12.5864 10.8712 12.5188 10.8911C12.4513 10.9111 12.3803 10.9166 12.3105 10.9072L12.877 10.4213ZM16.7652 15.2211C18.1557 13.463 18.945 11.0883 18.945 8.14229M16.7652 15.2211L18.945 8.14229M18.945 8.14229C18.945 7.99668 18.8714 7.78474 18.744 7.55722M18.945 8.14229L18.744 7.55722M18.744 7.55722C18.6142 7.32559 18.4215 7.06508 18.1673 6.82049M18.744 7.55722L18.1673 6.82049M18.1673 6.82049C17.6587 6.33088 16.8999 5.90129 15.905 5.90129L18.1673 6.82049ZM20.4978 5.53842C20.8818 5.48388 21.3285 5.34345 21.916 5.01105C21.6101 6.49526 21.4321 7.16764 20.7642 8.08336L20.745 8.10969V8.14229C20.745 11.9415 19.578 14.7567 17.8258 16.7397C16.0726 18.7238 13.7277 19.8813 11.3624 20.3532C9.74529 20.6759 7.7544 20.5728 5.99643 20.2106C5.11813 20.0296 4.30077 19.7846 3.61983 19.4974C3.03727 19.2517 2.56009 18.9775 2.22956 18.6904C2.66065 18.6482 3.4114 18.5535 4.24366 18.3598C5.24355 18.1272 6.37173 17.7494 7.20306 17.141L7.31918 17.056L7.19904 16.9768C7.15724 16.9492 7.11178 16.9196 7.06301 16.8879C6.30477 16.3938 4.74648 15.3786 3.73155 13.5166C2.66714 11.5637 2.19257 8.66295 3.91362 4.42592C5.57889 6.34347 7.2726 7.66001 8.99504 8.3668L8.99505 8.36681C9.57662 8.60536 9.94255 8.72373 10.2318 8.79141C10.4509 8.84265 10.6261 8.86463 10.8117 8.88794C10.8703 8.89529 10.93 8.90278 10.9924 8.91135L11.2872 8.95189L11.1059 8.77077C11.131 7.8414 11.4254 6.93895 11.9539 6.17331C12.4904 5.39606 13.2442 4.79434 14.1211 4.4435C14.9979 4.09265 15.9588 4.00828 16.8833 4.20093C17.8079 4.39359 18.6551 4.85471 19.3189 5.52657L19.3485 5.55658L19.3907 5.55628C19.4934 5.55556 19.5972 5.55908 19.7036 5.56269C19.9483 5.57098 20.2068 5.57974 20.4978 5.53842Z"
+                                            fill="white" stroke="black" stroke-width="0.2" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path
+                                        d="M15 1H5C3.93913 1 2.92172 1.42143 2.17157 2.17157C1.42143 2.92172 1 3.93913 1 5V15C1 16.0609 1.42143 17.0783 2.17157 17.8284C2.92172 18.5786 3.93913 19 5 19H15C16.0609 19 17.0783 18.5786 17.8284 17.8284C18.5786 17.0783 19 16.0609 19 15V5C19 3.93913 18.5786 2.92172 17.8284 2.17157C17.0783 1.42143 16.0609 1 15 1Z"
+                                        stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                    <path
+                                        d="M10 14C11.0609 14 12.0783 13.5786 12.8284 12.8284C13.5786 12.0783 14 11.0609 14 10C14 8.93913 13.5786 7.92172 12.8284 7.17157C12.0783 6.42143 11.0609 6 10 6C8.93913 6 7.92172 6.42143 7.17157 7.17157C6.42143 7.92172 6 8.93913 6 10C6 11.0609 6.42143 12.0783 7.17157 12.8284C7.92172 13.5786 8.93913 14 10 14V14Z"
+                                        stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                                    <path
+                                        d="M15.5 5.5C15.7652 5.5 16.0196 5.39464 16.2071 5.20711C16.3946 5.01957 16.5 4.76522 16.5 4.5C16.5 4.23478 16.3946 3.98043 16.2071 3.79289C16.0196 3.60536 15.7652 3.5 15.5 3.5C15.2348 3.5 14.9804 3.60536 14.7929 3.79289C14.6054 3.98043 14.5 4.23478 14.5 4.5C14.5 4.76522 14.6054 5.01957 14.7929 5.20711C14.9804 5.39464 15.2348 5.5 15.5 5.5Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M11.5 9.05C12.417 8.113 13.611 7.5 15 7.5C16.4587 7.5 17.8576 8.07946 18.8891 9.11091C19.9205 10.1424 20.5 11.5413 20.5 13V20.5H18.5V13C18.5 12.0717 18.1313 11.1815 17.4749 10.5251C16.8185 9.86875 15.9283 9.5 15 9.5C14.0717 9.5 13.1815 9.86875 12.5251 10.5251C11.8687 11.1815 11.5 12.0717 11.5 13V20.5H9.5V8H11.5V9.05ZM4.5 6C4.10218 6 3.72064 5.84196 3.43934 5.56066C3.15804 5.27936 3 4.89782 3 4.5C3 4.10218 3.15804 3.72064 3.43934 3.43934C3.72064 3.15804 4.10218 3 4.5 3C4.89782 3 5.27936 3.15804 5.56066 3.43934C5.84196 3.72064 6 4.10218 6 4.5C6 4.89782 5.84196 5.27936 5.56066 5.56066C5.27936 5.84196 4.89782 6 4.5 6ZM3.5 8H5.5V20.5H3.5V8Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section id="footer__botton">
+            <div class="footer__botton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                    <path
+                        d="M9.50008 18.3333C14.1025 18.3333 17.8334 14.6023 17.8334 9.99996C17.8334 5.39759 14.1025 1.66663 9.50008 1.66663C4.89771 1.66663 1.16675 5.39759 1.16675 9.99996C1.16675 14.6023 4.89771 18.3333 9.50008 18.3333Z"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M12.0001 8.14811C12.0001 8.14811 10.9707 6.66663 9.25498 6.66663C7.5393 6.66663 6.16675 8.14811 6.16675 9.99996C6.16675 11.8518 7.5393 13.3333 9.25498 13.3333C10.9707 13.3333 12.0001 11.8518 12.0001 11.8518"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <a href="#">Copyright Rimel 2022. All right reserved</a>
+            </div>
+        </section>
+    </footer>
+    <!-- footer end -->
+</body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        autoplay: true,
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+    });
+</script>
+
+</html>
