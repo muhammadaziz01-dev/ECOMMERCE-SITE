@@ -75,6 +75,9 @@ header {
                 list-style: none;
 
                 &--list{
+                    .click{
+                        border-bottom: 2px solid #7a7a7a !important;
+                    }
 
                     &-link{
                         text-decoration: none;
@@ -90,7 +93,7 @@ header {
 
 
                         &:hover{
-                            border-bottom: 1px solid #7a7a7a; 
+                            border-bottom: 2px solid #7a7a7a; 
                             transition: all .2s linear; 
                         }
                     }
